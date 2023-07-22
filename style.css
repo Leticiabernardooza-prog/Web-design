@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@font-face {
+    font-family: "Florentia";
+    src:url("fonts/Florentia-Thin-trial.ttf");
+}
+
+.clearfix {
+    clear: both;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+:target {
+    scroll-margin-top: .8em;
+  }
+body {
+    margin: 0px;
+    font-family: "Raleway", "Florentia", sans-serif;
+    background: #292929;
+}
+@media (min-width: 992px){
+.col-md-6 {
+    width: 50%;
+}
+.col-md-12 {
+    width: 100%;
+}
+.col-md-12, .col-md-6, .col-md-4{
+    float: left;
+}
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.topo {
+    background-color: #292929a8;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    color: rgb(187, 187, 187);
+    font-size: 16px;
+    float: right;
+    margin-top: 50px;
+}
+nav a {
+    color: rgb(254 255 255);
+    text-decoration: none;
+    margin: 10px;
+}
+nav a.btn_destaque {
+    margin-left: 25px;
+}
+
+.btn_destaque, .metade input[type=submit] {
+    border:none;
+    background-color: rgb(125, 5, 136);
+    color: white;
+    padding: 12px 40px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.intro {
+    height: 500px;
+    color: white;
+    background-image: url(../img/bannerrockinbox.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(164, 164, 164);
+    padding: 20px;
+}
+.intro p.titulo {
+    font-size: 48px;
+    padding-top: 50px;
+    color: aliceblue;
+    margin-top: 15%;
+}
+.intro p {
+    font-size: 24px;
+    padding-bottom: 30px;
+    line-height: 120%;
+}
+.cont01 {
+    background-color: #292929;
+    color: #f1f1f1;
+    padding-bottom: 35%;
+    margin-top: 50px;
+}
+.cont01 p {
+    font-size: 15px;
+    text-align: center;
+}
+.cont01 img {
+    width: 100%;
+       
+}
+.cont02 {
+    background-color: rgb(239, 243, 249);
+    height: 700px;
+    background-image: url(../img/bannerrockinbox.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.cont02 p {
+    font-size: 20px;
+    line-height: 120%;
+    color: rgb(255, 255, 255);
+    
+}
+.cont02 .titulo {
+    font-size: 48px;
+    padding-top: 60px;
+    color: aliceblue;
+}
+.plan {
+    background: linear-gradient(
+    45deg, #e73e36, #75167e);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 20px;
+    width: 22%;
+    display: inline-block;
+}
+.plan img{
+    border-radius: 20px;
+}
+.largura40 {
+    width: 35%;
+    float: left;
+    background-color: rgb(239, 243, 249);
+    height: 664px;
+}
+
+.copyright {
+    background-color: #4c1489;
+    color: white;
+    text-align: center;
+    padding:20px
+}
+.copyright a {
+    color: white;
+}
+
+.rodape {
+    width: 33%;
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.rodape, .rodape a {
+    color: rgb(216, 216, 216);
+}
+.rodape .logo {
+    width: 100%;
+}
+.rodape img {
+    width: 35px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.rodape img:hover {
+    filter: brightness(0.5);
+}
+.topo img {
+    filter: drop-shadow(2px 4px 6px black);
+    width: 25%;
+}
+.topo img:hover {
+    filter: brightness(0.5);
+}
+.margem_esquerda{
+    margin-left: 30px;
+}
+.contato {
+    height: 500px;
+    background-color: #FAFAFA;
+    margin-top: 10%;
+
+}
+.contato .metade {
+    padding-top: 100px;
+}
+.metade {
+    width: 50%;
+    float: left;
+    line-height: 150%;
+    color: rgb(120, 120, 120);
+}
+.metade div, .metade address {
+    margin-left: 20px;
+}
+.metade form {
+    line-height: 250%;
+}
+.metade form input[type=text], textarea {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 63%;
+    background-color: #FAFAFA;
+    padding: 10px;
+}
+.metade textarea {
+    min-height: 100px;
+}
+.metade input[type=submit] {
+    float:right;
+}
+.metade img {
+    width: 35px;
+}
+.metade label {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+/*MODAL MAPA*/
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modalDialog > div {
+    width: 600px;
+    position: relative;
+    margin: 10% auto;
+    
+    
+  }
+  .close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+  }
+  .close:hover {
+    background: #00d9ff;
+  }
+  /*botao topo*/
+  a[href="#top"]{
+    padding: 10px 12px;
+    position: fixed;
+    top: 90%;
+    right: 40px;
+    display: none;
+    background: #ca6207;
+    font-size: 30px;
+    border-radius: 25px;
+    color: #FFF;
+    transition: .2s all;
+}
+
+a[href="#top"]:hover{
+    text-decoration:none!important;
+  filter: opacity(0.8);
+}
+  a:focus, a:hover {
+    color: #23527c;
+    text-decoration: none!important;
+}
+/* Tablets e Computadores */
+@media screen and (min-width: 481px) and (max-width: 1366px){
+    
+}
+/* Smartphones */
+@media screen and (max-width: 480px) {
+    .topo .container {
+        margin-left: 10px;
+    }
+    .logo {
+        width: 100%;
+    }
+    nav {
+        float: none;
+        margin-left: 10px;
+        text-align: center;
+        font-size: 18px;
+    }
+    nav .btn_destaque {
+        margin-left: 0px !important;
+    }
+    .intro p, .intro .btn_destaque {
+        margin-left: 20px;
+    }
+    .cont02 {
+        background-image: none;
+        height: 450px;
+        text-align: center;
+        border-bottom: 1px solid rgb(204, 204, 204);
+    }
+    
+    .largura40 {
+        width: 100%;
+        height: 450px;
+    }
+    .rodape {
+        width: 100%;
+        border-bottom: 1px solid rgb(204, 204, 204);
+        padding-left: 20px;
+    }
+    .margem_esquerda {
+        margin-left: 0px;
+    }
+    .rodape .logo{
+        width: 50%;
+    }
+    .container_logo {
+        text-align: center;
+    }
+}
